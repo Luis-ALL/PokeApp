@@ -1,0 +1,51 @@
+:root {
+  --color-primary: #FFCB05;
+  --color-secondary: #2a75bb;
+  --color-text: rgba(255, 255, 255, 0.87);
+
+  --font-fredoka: 'Fredoka', sans-serif;
+  --font-pokemon: 'PokemonSolid', sans-serif;
+  --font-size-base: 1em;
+  --font-size-medium: 1.5em;
+  --border-radius-base: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Fredoka';
+  src: url('./assets/fonts/Fredoka-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'PokemonSolid';
+  src: url('./assets/fonts/Pokemon-Solid.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Fredoka', sans-serif;
+  background-image: url('./assets/img/pokeBackground.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: var(--font-size-base);
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
