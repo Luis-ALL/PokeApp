@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import SearchBar from "./components/SearchBar";
 import PokemonCard from "./components/PokemonCard";
 import Loader from "./components/Loader";
+import logoPokeApp from '../assets/img/logoPokeApp.png';
+
 
 function App() {
   const [nombre, setNombre] = useState("");
@@ -66,7 +68,7 @@ function App() {
   return (
     <div className="d-flex flex-column align-items-center justify-content-center mt-5">
       <div className="logo-container">
-        <img src="/src/assets/img/logoPokeApp.png" alt="PokeApp"/>
+        <img src={logoPokeApp} alt="PokeApp" />
       </div>
       <div className="search-container">
         <SearchBar
